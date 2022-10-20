@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF1DC;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.card{
+    border-radius: 25px;
+    background-color: #FFF;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #E47474;
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #ED9999;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px; 
+    border-radius: 50%;
+    background: #FFF;
+    padding: 3px;
+}
+.card-image .card-img{
+    height:  100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #E47474;
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.swiper-navBtn{
+    color: #E47474;
+    transition: color 0.3s ease
+}
+.swiper-navBtn:hover{
+    color: #FF0099;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 40px;
+}
+.swiper-button-next{
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: #ED9999;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: #E47474;
+}
+@media screen  and (max-width: 768px) {
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+}
+ /* estilo do menu*/
+ 
+ *{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+ 
+ 
+}
+ 
+nav li {
+    display: inline-block;    
+    margin: 0 8px;
+    line-height: 40px;
+}
+nav {
+    height: 100px;
+    width: 100%;
+    background: #fff1dc;
+   
+}
+.img_menu {
+    height: 100px;
+    width: 120px;
+    margin-left: 0px;
+    float: left;
+}
+ 
+nav ul li a {
+    color: #e47474;
+    font-size: 18px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    border-radius: 3px;
+       
+}
+nav ul li a:hover {
+    background-color: #d9d9d9;
+}
+ 
+ul {
+    text-align:right;
+}
+/*estilo do rodapé*/
+ 
+
+.rodape_logo {
+    width: 90px;
+    margin: 15px;
+}
+ 
+.rodape {
+    background-color: #d9d9d9;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+ 
+.rodape_h1 {
+    font-family: 'Dancing Script', cursiva;
+    color: #e47474;
+    font-size: smaller;
+    margin-left: 10px;
+    margin-top: 0%;
+}
+ 
+.rodape_h2 {
+    font-size: smaller;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+ 
+.face_logo {
+    width: 20px;
+    margin-left: 10px;
+}
+ 
+.insta_logo {
+    width: 30px;
+}
+ 
+.wpp_logo{
+    width: 25px;
+}
+ 
+.bandeiras{
+    height: 60px;
+    width: 160px;
+    margin-left: 10px;
+}
+ 
+.sec_rod{
+    border: 1px solid;
+    width: 33.33%;
+}
